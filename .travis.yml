@@ -4,23 +4,24 @@ language: python
 
 matrix:
   include:
-    # Python 3.6
+    # Python 3.6 on Linux
     - python: "3.6"
       os: "linux"
       dist: trusty
       env: TOXENV=py36
 
-    # Python 3.7-dev
+    # Python 3.7-dev on Linux
     - python: "3.7-dev"
       os: "linux"
       dist: trusty
       env: TOXENV=py37
 
-    #- os: "osx"
-    #  language: generic
-    #  env: TOXENV=py27
+    # Python 3.6 on OSX
+    - os: "osx"
+      language: generic
+      env: TOXENV=py36
 
-    # PyPy3 v?
+    # PyPy3 v? on Linux
     - python: "pypy3"
       os: "linux"
       dist: trusty
